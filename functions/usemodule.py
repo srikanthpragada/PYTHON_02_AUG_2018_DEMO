@@ -5,7 +5,7 @@ import sys
 
 sys.path.append(r"e:\classroom\python\aug2\demo\exercises")
 
-import anothermodule
+import anothermodule as am
 
 from mymodule import *
 
