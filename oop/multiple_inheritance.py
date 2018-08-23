@@ -3,19 +3,14 @@ class A:
         print("print() in A")
 
 
-class B:
+class B(A):
     def print(self):
         print("print() in B")
 
 
-class C(A):
+class C(B,A):
     def print(self):
         print("print() in C")
 
 
-class D(C,B):
-    def print(self):
-        print("print() in D")
-
-
-print(D.__mro__)
+print(C.__mro__)
